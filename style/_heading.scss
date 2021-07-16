@@ -1,0 +1,26 @@
+.title{
+    padding-top: 15px;
+    width: 80%;
+    margin: 0 auto 20px;
+    border-bottom: 2px outset $lineColor;
+    text-align: center;
+}
+.headingTitle{
+    font-family: $titleFont;
+    color: $mainGreenColor;
+    
+    //OVOV IDE ZA VEĆE EKRANE
+    // line-height: 132px;
+}
+
+.titleImg{
+    border: 2px solid $mainYellowColor;
+    box-shadow: 0px 0px 0px 4px $mainGreenColor;
+    border-radius: 10%;
+    margin: auto;
+    //OVOV IDE ZA VEĆE EKRANE
+    // float: left;
+    // margin-right: 40px;
+}
+
+// NAVIGATION

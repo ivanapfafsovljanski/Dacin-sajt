@@ -2,7 +2,9 @@ import React from "react";
 
 function Honey() {
     return(
-        <div></div>
+        <div>
+            <h1>MED</h1>
+        </div>
     )
 }
 

@@ -1,9 +1,15 @@
 import React from "react";
+import ProductButtons from "./ProductButtons";
 
-function Products(){
-    return(
+
+function Products() {
+    return (
+
         <div>
-<h1>This ia a product page</h1>
+            
+           <ProductButtons />
+           
+
         </div>
     )
 }

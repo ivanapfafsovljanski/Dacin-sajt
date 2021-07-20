@@ -30,10 +30,11 @@ console.log(product);
     
 
         <div>
+            
             <input type="button" value="Med" onClick={handleProducts} className="btnproducts" />
             <input type="button" value="Pčelinji proizvodi" onClick={handleProducts} className="btnproducts"/>
             <input type="button" value="Pića" onClick={handleProducts} className="btnproducts"/>
-
+           
             <div>
                 {product === "Honey" ? <Honey /> : null}
                 {product === "HoneyProducts" ? <HoneyProducts /> : null}

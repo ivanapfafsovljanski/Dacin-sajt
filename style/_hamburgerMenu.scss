@@ -1,0 +1,36 @@
+
+.hamburgerContainer{
+    height: 60px;
+    background-color: $hamburger;
+    position: relative;
+    margin-bottom: 20px;
+}
+.smallScr{
+    float: left;
+    position: absolute;
+    left: 20px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    
+}
+.hamburgerMenu{
+    height: 50px;
+    float: right;
+    filter: invert(100%);
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.homeImg{
+    width: 90%;
+    margin: 30px 5% 20px;
+   
+}
+.manuSm{
+    width: 100%;
+    position: absolute;
+    top: 100px;
+}

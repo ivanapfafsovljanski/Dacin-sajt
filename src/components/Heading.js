@@ -15,30 +15,22 @@ function Heading() {
                 <h1 className="headingTitle">"Jašin" pčelarsko gazdinstvo</h1>
             </div>
             <nav>
-                <Router>
+                {/* <Router> */}
                     <Link to="/"><img className="logoInMenu" src="../img/mali-mali-logo.png" /></Link>
                     <NavLink className="link" activeClassName="navActiveLink" exact to="/">Početna</NavLink>
-
-                    
-                        <NavLink className="link" activeClassName="navActiveLink" exact to="/products">Proizvodi</NavLink>
-
-                       
-
+                    <NavLink className="link" activeClassName="navActiveLink" exact to="/products">Proizvodi</NavLink>
                     <NavLink className="link" activeClassName="navActiveLink" exact to="/aboutUs">O Nama</NavLink>
                     <NavLink className="link" activeClassName="navActiveLink" exact to="/contact">Kontakt</NavLink>
 
                     <Switch>
-                        <Route path="/" exact component={Home} />
-                        <Route path="/products" exact component={Products} />
-
-                        {/*  /> */}
-
-                        <Route path="/aboutUs" exact component={AboutUs} />
-                        <Route path="/contact" exact component={Contact} />
+                        <Route exact path="/" > <Home /> </Route>
+                        <Route path="/products" ><Products /> </Route>
+                        <Route path="/aboutUs" > <AboutUs /> </Route>
+                        <Route path="/contact" ><Contact /> </Route>
 
                     </Switch>
 
-                </Router>
+                {/* </Router> */}
             </nav>
 
         </div>

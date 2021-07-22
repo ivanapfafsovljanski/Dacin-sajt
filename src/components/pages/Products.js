@@ -7,7 +7,7 @@ function Products() {
 
         <div>
             
-           <ProductButtons />
+           
            
 
         </div>

@@ -1,11 +1,22 @@
-// $bgColor: #f8f8e6;
-$bgColor: #FFF0A5;
-$lineColor: #326765;
-$mainGreenColor: #4a916a;
-$mainYellowColor: #ffca05;
+//$bgColor: #f8f8e6;
+//$bgColor: #FFF0A5;
+//$bgColor: #FFF0A5;
+//Zelena boja u gradijentu pozadine
+$gradientOuter: #326765;
+$btnGradientLight: #7DA87B;
+//$mainGreenColor: #4a916a;
+//$mainYellowColor: #ffca05;
+//boja fonta i hamburger menija
 $fontColor: #27253D;
 //$hamburger: #FFB03B;
-$hamburger: #468966;
+//$hamburger: #468966;
+//boja zaglavlja na malim ekranima
+$hamburger: #27253D;
+//boja pozadine menija na malim ekranima
+$menuBG: rgba(255, 255, 255, .9);
+//boja fonta aktivne klase
+$fontAktiv: #fff;
+$fontLight: #F5F5C6;
 
 $bodyFont: 'Montserrat', sans-serif;
 $titleFont: 'Sriracha', cursive;

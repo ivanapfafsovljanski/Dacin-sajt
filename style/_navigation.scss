@@ -1,0 +1,46 @@
+
+// NAVIGATION
+
+//nav sm-screen
+nav{
+    padding-top: 5px;
+}
+.link, .subLink{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid $hamburger;
+    width: 75%;
+    margin: 0px auto;
+}
+.link:hover:not(.navActiveLink){
+    background-color: $gradientOuter;
+    color: $fontAktiv;
+}
+.logoInMenu{
+    display: none;
+}
+.navActiveLink{
+    background-color: $hamburger;
+    color: $fontAktiv;
+}
+    //subMenu
+
+.productsMenu{
+    width: 100%;
+}
+.subLink{
+    background:linear-gradient(to bottom, $btnGradientLight 5%, $gradientOuter 100%);
+    color: $fontLight;
+}
+.subLink:hover:not(.subActiveLink){
+    background:linear-gradient(to bottom, $fontLight 5%, $btnGradientLight 100%);
+    color: $gradientOuter;
+}
+.subActiveLink{
+    background: none;
+    background-color: $fontLight;
+    color: $hamburger;
+}

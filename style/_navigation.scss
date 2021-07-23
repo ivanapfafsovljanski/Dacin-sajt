@@ -2,8 +2,21 @@
 // NAVIGATION
 
 //nav sm-screen
+.manuSm{
+    width: 100%;
+    // position: absolute;
+    // top: 110px;
+    // background-color: $menuBG;
+    // height: calc(100vh - 110px);
+   
+}
 nav{
     padding-top: 5px;
+    width: 60%;
+    position: absolute;
+    top: 110px;
+    background-color: $menuBG;
+    height: calc(100vh - 110px);
 }
 .link, .subLink{
     padding: 10px;

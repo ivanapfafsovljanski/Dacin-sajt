@@ -1,5 +1,6 @@
 //styled komponent from hamburger menu - NavigationSM component
 
+//reading - with hamburger menu
 .hamburgerContainer{
     height: 60px;
     background-color: $hamburger;
@@ -24,30 +25,15 @@
     right: 20px;
     cursor: pointer;
 }
-
+// img from bacgroundScreen / homescreen
 .homeImg{
     width: 90%;
     margin: 30px 5% 20px;
     border-radius: 8px;
     box-shadow: 0px 2px 5px 1px $fontLight;
-
-}
-
-.manuSm{
-    width: 60%;
-    position: absolute;
-    top: 110px;
-    background-color: $menuBG;
-    height: calc(100vh - 110px);
-   
+    z-index: -5;
 }
 
 
 
-// .example-enter{
-//     opacity: 0.04;
-// }
-// .example-enter.example-enter-active{
-//     opacity: 1;
-//     transition: opacity 2000ms ease-in;
-// }
+

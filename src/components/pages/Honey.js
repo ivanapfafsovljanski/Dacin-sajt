@@ -2,9 +2,10 @@ import React from "react";
 
 function Honey() {
     return(
-        <div>
-            <img src="../img/tegla-meda.jpg" className="honeyImg" />
-            <h1>MED</h1>
+        <div className="productContainer">
+            <h1 className="productsTitle">MED</h1>
+            <img src="../img/tegla-meda.jpg" className="productImg" />
+            
         </div>
     )
 }

@@ -1,7 +1,7 @@
 
 body{
     //background-color: $bgColor;
-    background-image: linear-gradient($gradientOuter 5%, $hamburger, $gradientOuter);
+    background-image: linear-gradient($gradientOuter, $hamburger, $gradientOuter);
     font-family: $bodyFont;
     color: $fontColor;
 }

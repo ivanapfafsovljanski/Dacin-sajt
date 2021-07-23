@@ -1,10 +1,98 @@
 
 .productContainer{
-    
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 8px 3px $fontLight;
+    padding: 8px 0;
    
 }
+.productsTitle{
+    color: $fontLight;
+    margin-left: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 3px 3px $hamburger;
+}
 .productImg{
-    z-index: -5;
+    
+    width: 30%;
+    margin-left: 20px;
+    border-radius: 100%;
+
+}
+//Card for prodacts
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.cardFrame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+    height: 560px;
+    margin-top: 40px;
+    border: 1px solid $fontLight;
+    border-radius: 16px;
+    box-shadow: 2px 2px 8px 1px $cardShedow;
+}
+.cardTitle{
+    text-align: center;
+    color: $fontLight;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding: 20px 0 ;
+    border-radius: 16px 16px 0 0;
+    text-shadow: 1px 3px 3px $hamburger;
+    font-size: 1.5rem;
+}
+.cardTitle:hover{
+    font-size: 26px;
+    // margin-bottom: 26px;
+    padding: 18px 0;
+}
+.imgCard{
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    // border: 1px solid $fontLight;
+    border-radius: 8px;
+    box-shadow: 0 0 0 5px $fontLight;
+    
+}
+.imgCard:hover{
+    box-shadow: 0 0 0 10px $fontLight;
+    width: 81%;
+}
+.imgInCard{
+    max-height: 400px;
     width: 100%;
     object-fit: cover;
+    border-radius: 8px;
+}
+.cardText{
+    // background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 0 16px 16px;
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+}
+.package, .price{
+    color: $fontLight;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 8px;
+    border-radius: 8px;
+    margin: 16px 0 8px;
+    width: 80px;
+    text-align: center;
+}
+.package:hover, .price:hover{
+    box-shadow: 1px 0 5px 1px $fontLight;
 }

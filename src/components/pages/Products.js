@@ -6,7 +6,9 @@ function Products() {
     return (
 
         <div>
-            
+            <div className="homeImgContainer" >
+                <img className="homeImg" src="../img/bckg.jpg" alt="honey products" />
+            </div>
            
            
 

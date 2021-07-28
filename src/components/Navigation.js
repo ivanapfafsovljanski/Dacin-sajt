@@ -44,18 +44,18 @@ function Navigation() {
             </div>
 
 
-
+            
+              
 
 
             {/* <div style={{ display: isDisplayed ? "block" : "none" }} > */}
             <CSSTransition
                 in={isDisplayed}
-                timeout={500}
+                timeout={{enter: 500, exit: 800}}
                 classNames="manuSm"
-                // onEnter={() => setDisplayMenu(true)}
-                // onExit={() => setDisplayMenu(false)}
-            >
                 
+            >
+                 
                 <nav className="manuSm">
 
                     <Link to="/"><img onClick={subMenuClosed} className="logoInMenu" src="../img/mali-mali-logo.png" /></Link>
@@ -74,6 +74,7 @@ function Navigation() {
                 </nav>
            
         </CSSTransition>
+        
         </div>
             // </div >
             

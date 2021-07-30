@@ -1,3 +1,4 @@
+import { timers } from "jquery";
 import React from "react";
 import Card from "../Card";
 import honeyProductList from "../productLists/honeyProductsList";
@@ -7,7 +8,7 @@ function HoneyProducts() {
         <div>
             <div className="productContainer">
                 <h1 className="productsTitle">Pčelinji proizvodi</h1>
-                <img src="../img/propolis.jpg" className="productImg" />
+                <img src="../img/propolis.jpg" className="productImgRght" />
 
             </div>
             <div className="cardContainer">
@@ -19,6 +20,7 @@ function HoneyProducts() {
                         image={item.productImg}
                         price={item.productPrice}
                         package={item.productPackage}
+                        text={timers.text}
                         />
                     )
                 })}

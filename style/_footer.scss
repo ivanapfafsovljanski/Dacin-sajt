@@ -1,8 +1,29 @@
 
 .footerContainer{
     background-color: $hamburger;
+    // position: relative;
+    // bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.8rem;
+    
+    height: 50px;
 }
 .footerContainer p{
     margin: 0;
     color: $gradientOuter;
+    line-height: 50px;
+}
+p.copyright{
+    text-align: center;
+    
+}
+.contactIco{
+    width: 24px;
+}
+.footerContact{
+    display: none;
+}
+.footerContact td{
+    padding-left: 10px;
 }

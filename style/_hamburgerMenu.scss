@@ -11,28 +11,23 @@
     float: left;
     position: absolute;
     left: 20px;
+    top: 6px;
     background-color: white;
     padding: 8px;
     border-radius: 5px;
     cursor: pointer;
+    height: 30px;
 }
 .hamburgerMenu{
-    height: 50px;
+    height: 40px;
     float: right;
     filter: invert(100%);
     position: absolute;
-    top: 5px;
+    top: 10px;
     right: 20px;
     cursor: pointer;
 }
-// img from bacgroundScreen / homescreen
-.homeImg{
-    width: 90%;
-    margin: 30px 5% 20px;
-    border-radius: 8px;
-    box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.6);
-    z-index: -5;
-}
+
 
 
 

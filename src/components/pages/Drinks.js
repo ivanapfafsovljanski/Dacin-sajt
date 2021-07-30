@@ -19,6 +19,7 @@ function Drinks() {
                             image={item.productImg}
                             price={item.productPrice}
                             package={item.productPackage}
+                            text={item.text}
                         />
                     )
                 })}

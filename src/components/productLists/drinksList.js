@@ -4,15 +4,16 @@ const drinksList = [
         productName: "Medovača",
         productImg: "../img/drinks/drinksMedovaca.jpg",
         productPrice: "700",
-        productPackage: "1l"
-
+        productPackage: "1l",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veniam commodi ipsa iusto laborum omnis architecto aspernatur molestiae iure itaque unde accusamus tempore molestias dolore sit officia, provident expedita inventore?"
     },
     {
         productId: "1",
         productName: "Medovača",
         productImg: "../img/drinks/drinksMedovaca.jpg",
         productPrice: "700",
-        productPackage: "750ml"
+        productPackage: "750ml",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veniam commodi ipsa iusto laborum omnis architecto aspernatur molestiae iure itaque unde accusamus tempore molestias dolore sit officia, provident expedita inventore?"
 
     },
     {
@@ -20,7 +21,8 @@ const drinksList = [
         productName: "Crno vino",
         productImg: "../img/drinks/drinksCrno.jpg",
         productPrice: "700",
-        productPackage: "1l"
+        productPackage: "1l",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veniam commodi ipsa iusto laborum omnis architecto aspernatur molestiae iure itaque unde accusamus tempore molestias dolore sit officia, provident expedita inventore?"
 
     },
     {
@@ -28,7 +30,8 @@ const drinksList = [
         productName: "Rose",
         productImg: "../img/drinks/drinksCrno.jpg",
         productPrice: "700",
-        productPackage: "750ml"
+        productPackage: "750ml",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veniam commodi ipsa iusto laborum omnis architecto aspernatur molestiae iure itaque unde accusamus tempore molestias dolore sit officia, provident expedita inventore?"
 
     },
     {
@@ -36,7 +39,8 @@ const drinksList = [
         productName: "Šiler",
         productImg: "../img/drinks/drinksSiler1.jpg",
         productPrice: "700",
-        productPackage: "750ml"
+        productPackage: "750ml",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi veniam commodi ipsa iusto laborum omnis architecto aspernatur molestiae iure itaque unde accusamus tempore molestias dolore sit officia, provident expedita inventore?"
 
     },
 ]

@@ -21,6 +21,12 @@
     border-radius: 100%;
 
 }
+.productImgRght{
+    width: 30%;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+
 //Card for prodacts
 .cardContainer{
     display: flex;
@@ -39,6 +45,7 @@
     border: 1px solid $fontLight;
     border-radius: 16px;
     box-shadow: 2px 2px 8px 1px $cardShedow;
+    margin-bottom: 20px;
 }
 .cardTitle{
     text-align: center;
@@ -64,17 +71,22 @@
     // border: 1px solid $fontLight;
     border-radius: 8px;
     box-shadow: 0 0 0 5px $fontLight;
+    position: relative;
     
 }
 .imgCard:hover{
     box-shadow: 0 0 0 10px $fontLight;
     width: 81%;
+    cursor: pointer;
 }
 .imgInCard{
     max-height: 400px;
     width: 100%;
     object-fit: cover;
     border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .cardText{
     // background-color: rgba(255, 255, 255, 0.3);
@@ -84,6 +96,17 @@
    align-items: center;
    justify-content: space-around;
 }
+// this is animation of switching card content
+.cardCont-enter{opacity: 0; transform: rotateY(90deg);}
+.cardCont-enter-active{opacity: 1;transform: rotateY(0deg); transition: opacity 500ms, transform 500ms cubic-bezier(0.11, 0, 0.5, 0);}
+.cardCont-enter-done{}
+
+.cardCont-exit{}
+.cardCont-exit-active{opacity: 0; transform: rotateY(90deg); transition: opacity 500ms, transform 500ms cubic-bezier(0.5, 1, 0.89, 1); }
+.cardCont-exit-done{}
+// 
+//
+
 .package, .price{
     color: $fontLight;
     background-color: rgba(255, 255, 255, 0.3);

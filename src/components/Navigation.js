@@ -43,12 +43,6 @@ function Navigation() {
 
             </div>
 
-
-            
-              
-
-
-            {/* <div style={{ display: isDisplayed ? "block" : "none" }} > */}
             <CSSTransition
                 in={isDisplayed}
                 timeout={{enter: 500, exit: 800}}

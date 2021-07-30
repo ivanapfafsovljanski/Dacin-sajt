@@ -17,7 +17,7 @@ function App(){
 
     return(
         <Rauter>
-        <div>
+        <div >
         <Heading />
         <Navigation />
        

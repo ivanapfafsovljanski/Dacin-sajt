@@ -20,7 +20,7 @@ function HoneyProducts() {
                         image={item.productImg}
                         price={item.productPrice}
                         package={item.productPackage}
-                        text={timers.text}
+                        text={item.text}
                         />
                     )
                 })}

@@ -6,6 +6,7 @@
     align-items: center;
     box-shadow: 5px 0 8px 3px $fontLight;
     padding: 8px 0;
+    margin-top: 80px;
    
 }
 .productsTitle{
@@ -120,6 +121,7 @@
     margin: 16px 0 8px;
     width: 80px;
     text-align: center;
+    z-index: 25;
 }
 .package:hover, .price:hover{
     box-shadow: 1px 0 5px 1px $fontLight;

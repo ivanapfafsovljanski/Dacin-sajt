@@ -4,8 +4,12 @@
 .hamburgerContainer{
     height: 60px;
     background-color: $hamburger;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     margin-bottom: 20px;
+    width: 100%;
+    z-index: 1005;
 }
 .smallScr{
     float: left;

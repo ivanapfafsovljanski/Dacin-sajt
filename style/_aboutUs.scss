@@ -1,0 +1,30 @@
+
+.aboutUsContainer{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -100px;
+}
+.aboutUsAdditionalImg, .aboutUsTextContainer{
+    width: 316px;
+}
+.aboutUsAdditionalImg img{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+.aboutUsTextContainer{
+    margin-bottom: 20px;
+}
+.aboutUsTextContainer img{
+    float: left;
+    border-radius: 4px;
+    margin: 18px 10px 10px 0;
+    height: 120px;
+    box-shadow: 0 0 8px $fontLight;
+}
+.aboutUsTextContainer p{
+    color: $fontLight;
+}

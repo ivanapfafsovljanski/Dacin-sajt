@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import { CSSTransition } from 'react-transition-group';
 
 
-function Navigation() {
+function Navigation(props) {
 
     const [isDisplayed, setDisplayMenu] = useState(false);
 
@@ -15,6 +15,7 @@ function Navigation() {
         subMenuClosed();
 
     }
+    
     const [isSubMenoShowen, setSubMenu] = useState(false);
 
     //toggle between opened and closed subMenu (by clicking on Proizvodi link)
@@ -32,8 +33,16 @@ function Navigation() {
         setDisplayMenu(false)
     }
 
-
-
+    // function closingMenuBody(){
+    //     console.log(isSubMenoShowen);
+    //     if(isSubMenoShowen){
+    //         setDisplayMenu(true);
+    //     }else{
+    //         setDisplayMenu(false);
+    //     }
+    // }
+    
+    
     return (
         <div>
             {/* Hamburger menu */}
@@ -42,7 +51,7 @@ function Navigation() {
                 <img className="hamburgerMenu" src="../img/hamburger.ico" onClick={displayingMenu} />
 
             </div>
-
+            
             <CSSTransition
                 in={isDisplayed}
                 timeout={{enter: 500, exit: 800}}
@@ -68,9 +77,9 @@ function Navigation() {
                 </nav>
            
         </CSSTransition>
-        
+        <div className="menuBacground" onClick={menuClosed}></div>
         </div>
-            // </div >
+           
             
         
     )

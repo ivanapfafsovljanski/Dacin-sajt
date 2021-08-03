@@ -2,19 +2,18 @@
 .homeImgContainer{
     display: flex;
     justify-content: center;
-    min-height: calc(100vh - 130px);
+    min-height: calc(100vh - 50px);
 }
 // img from bacgroundScreen / homescreen
 .homeImg{
-    // width: 90%;
+    width: 316px;
     // min-width: 230px;
     height: 60vh;
-    
-    margin: 30px 0 20px;
+    margin: 110px 0 20px;
     border-radius: 8px;
     box-shadow: 4px 4px 8px 5px rgba(0, 0, 0, 0.6);
     z-index: -5;
-    // object-fit: cover;
+    object-fit: cover;
 }
 .SocialMediaTable{
     position: absolute;

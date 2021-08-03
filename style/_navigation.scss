@@ -4,8 +4,7 @@
 //nav sm-screen
 .manuSm{
     width: 200px;
-    // position: absolute;
-    // top: 110px;
+    
     // background-color: $menuBG;
     // height: calc(100vh - 110px);
    
@@ -24,12 +23,20 @@
 //      
 //      
 //     
-
+.menuBacground{
+    height: calc(100vh - 110px);
+    width: calc(100vw - 220px);
+    position: fixed;
+    top: 60px;
+    left: 200px;
+    // background-color: chartreuse;
+    
+}
 nav{
     display: block;
     padding-top: 5px;
     // width: 100%;
-    position: absolute;
+    position: fixed;
     top: 110px;
     left: -200px;
     background-color: $menuBG;

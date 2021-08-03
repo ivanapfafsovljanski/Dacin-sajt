@@ -1,4 +1,6 @@
 import React from "react";
+import socialMediaList from "./pages/socilaMediaList";
+import contactList from "./pages/contactList";
 
 
 function Footer(){
@@ -9,39 +11,20 @@ function Footer(){
             <div className="konekcije">
                 <table className="footerContact">
                     <tbody>
-                        <tr>
+                    {socialMediaList.map(contact => {
+                            return(
+                            <tr key={contact.id}>
                             <td>
-                                <img className="contactIco" src="../img/socilaMedia/twitterIcon.ico" alt="twitter logo" />
+                                <img className="contactIco" src={contact.iconImage} alt="twitter logo" />
                             </td>
                             <td>
-                            <p>twitter</p>
+                            <p>{contact.id}</p>
                             </td>
                             <td>
-                            <p>twitterAddress</p>
+                            <p>{contact.contactAddress}</p>
                             </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img className="contactIco" src="../img/socilaMedia/facebookIcon2.ico" alt="twitter logo" />
-                            </td>
-                            <td>
-                            <p>facebook</p>
-                            </td>
-                            <td>
-                            <p>facebookAddress</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img className="contactIco" src="../img/socilaMedia/emailIcon.ico" alt="twitter logo" />
-                            </td>
-                            <td>
-                            <p>email</p>
-                            </td>
-                            <td>
-                            <p>emailAddress</p>
-                            </td>
-                        </tr>
+                        </tr>)
+                        })}
                     </tbody>
                 </table>
                

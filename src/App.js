@@ -17,7 +17,7 @@ function App(){
 
     return(
         <Rauter>
-        <div >
+        <div>
         <Heading />
         <Navigation />
        
@@ -32,9 +32,6 @@ function App(){
 
         </Switch>
               <Footer />  
-        
-        
-        
         </div>
         </Rauter>
     )

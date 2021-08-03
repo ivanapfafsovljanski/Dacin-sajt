@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 
 
 function HomeScreen() {
+
     
    return(
-        <div>
+        <div >
            <div className="homeImgContainer" >
                 <img className="homeImg" src="../img/bckg.jpg" alt="honey products" />
                

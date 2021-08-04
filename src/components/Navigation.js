@@ -3,12 +3,13 @@ import { NavLink, Link } from "react-router-dom";
 import { CSSTransition } from 'react-transition-group';
 
 
-function Navigation(props) {
+function Navigation() {
 
     const [isDisplayed, setDisplayMenu] = useState(false);
 
     //displaying side manu on clicking hamburger
     function displayingMenu() {
+       
         setDisplayMenu((privValue) => {
             return !privValue;
         })
@@ -41,8 +42,7 @@ function Navigation(props) {
     //         setDisplayMenu(false);
     //     }
     // }
-    
-    
+   
     return (
         <div>
             {/* Hamburger menu */}

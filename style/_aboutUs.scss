@@ -72,3 +72,13 @@
 .usAnima-exit{}
 .usAnima-exit-active{opacity: 0; transform: rotateY(90deg); transition: opacity 500ms, transform 500ms cubic-bezier(0.5, 1, 0.89, 1); }
 .usAnima-exit-done{}
+
+// .usAnimaText-enter{opacity: 0; transform: translateY(-300px);}
+// .usAnimaText-enter-active{opacity: 1; transform: translateY(0px); transition: opacity 1000ms, transform 1000ms;}
+.usAnimaText-enter{opacity: 0; transform: scale(0.1);}
+.usAnimaText-enter-active{opacity: 1; transform: scale(1); transition: opacity 1000ms, transform 1000ms;}
+.usAnimaText-enter-done{}
+
+.usAnimaText-exit{}
+.usAnimaText-exit-active{opacity: 0; transition: opacity 1000ms;}
+.usAnimaText-exit-done{}

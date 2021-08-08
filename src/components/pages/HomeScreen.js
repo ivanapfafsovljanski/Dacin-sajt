@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-
+import { CSSTransition } from "react-transition-group";
 
 function HomeScreen() {
-
+    const [homeScreenImgDisplayed, setHomeScreenImg] = useState(true);
     
    return(
         <div >
+        <CSSTransition
+        in={homeScreenImgDisplayed}
+        timeout={1200}
+        classNames={"homeAnima"}
+        appear={true}
+        >
            <div className="homeImgContainer" >
-                <img className="homeImg" src="../img/bckg.jpg" alt="honey products" />
+                <img className="homeImg homeAnima" src="../img/bckg.jpg" alt="honey products" />
                
             </div>
-            <div className="socialMedia">
+            </CSSTransition>  
+            <div className="socialMedia homeAnima">
                 <table className="SocialMediaTable">
                     <tbody>
                         <tr>
@@ -36,7 +42,8 @@ function HomeScreen() {
                     </tbody>
                 </table>
                 </div>
-           
+                
+                
         </div>
     )
 }

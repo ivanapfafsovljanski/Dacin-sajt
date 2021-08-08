@@ -15,6 +15,13 @@
     z-index: -5;
     object-fit: cover;
 }
+
+.homeAnima-appear{transform:scale(0.8); opacity: 0.05;}
+.homeAnima-appear-active{transform:scale(1); opacity: 1; transition: opacity 1200ms, transform 500ms cubic-bezier(0.16, 1, 0.3, 1);}
+// .homeAnima-appear{opacity: 0.25;}
+// .homeAnima-appear-active{opacity: 1; transition: opacity 1200ms}
+.homeAnima-appear-done{}
+
 .SocialMediaTable{
     position: absolute;
     top: 40vh;

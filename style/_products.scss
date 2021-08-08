@@ -4,16 +4,20 @@
     flex-direction: row;
     // justify-content: space-between;
     align-items: center;
+    // justify-content: space-between;
     box-shadow: 5px 0 8px 3px $fontLight;
     padding: 8px 0;
     margin-top: 80px;
    
 }
-.productsTitle{
+.productsTitle, .productsTitleRight{
     color: $fontLight;
     margin-left: 30px;
     font-size: 2rem;
     text-shadow: 1px 3px 3px $hamburger;
+}
+.productsTitleRight{
+    margin: 0 30px 0 20px;
 }
 .productImg{
     
@@ -26,6 +30,7 @@
     width: 30%;
     margin-right: 20px;
     border-radius: 100%;
+    float: right;
 }
 
 //Card for prodacts

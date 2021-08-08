@@ -7,7 +7,7 @@ function HoneyProducts() {
     return (
         <div>
             <div className="productContainer">
-                <h1 className="productsTitle">Pčelinji proizvodi</h1>
+                <h1 className="productsTitleRight">Pčelinji proizvodi</h1>
                 <img src="../img/propolis.jpg" className="productImgRght" />
 
             </div>

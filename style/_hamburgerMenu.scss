@@ -31,6 +31,11 @@
     right: 20px;
     cursor: pointer;
 }
+@media only screen and (min-width: 481px) {
+    .hamburgerContainer, .smallScr, .hamburgerMenu{
+        display: none;
+    }
+}
 
 
 

@@ -59,7 +59,7 @@ function Navigation() {
                 
             >
                  
-                <nav className="manuSm">
+                <nav className="manuSm menuBig">
 
                     <Link to="/"><img onClick={subMenuClosed} className="logoInMenu" src="../img/mali-mali-logo.png" /></Link>
                     <NavLink onClick={subMenuClosed} className="link" activeClassName="navActiveLink" exact to="/">Početna</NavLink>
@@ -67,9 +67,9 @@ function Navigation() {
                     <NavLink onClick={showSubMenu} className="link" activeClassName="navActiveLink" exact to="/products">Proizvodi</NavLink>
 
                     <div className="productsMenu" style={{ display: isSubMenoShowen ? "block" : "none" }}>
-                        <NavLink onClick={menuClosed} className="subLink" activeClassName="subActiveLink" exact to="/products/Honey">Med</NavLink>
-                        <NavLink onClick={menuClosed} className="subLink" activeClassName="subActiveLink" exact to="/products/HoneyProducts">Pčelinji proizvodi</NavLink>
-                        <NavLink onClick={menuClosed} className="subLink" activeClassName="subActiveLink" exact to="/products/Drinks">Pića</NavLink>
+                        <NavLink onClick={menuClosed} className="subLink first" activeClassName="subActiveLink" exact to="/products/Honey">Med</NavLink>
+                        <NavLink onClick={menuClosed} className="subLink secund" activeClassName="subActiveLink" exact to="/products/HoneyProducts">Pčelinji proizvodi</NavLink>
+                        <NavLink onClick={menuClosed} className="subLink third" activeClassName="subActiveLink" exact to="/products/Drinks">Pića</NavLink>
                     </div>
                     <NavLink onClick={subMenuClosed} className="link" activeClassName="navActiveLink" exact to="/aboutUs">O Nama</NavLink>
                     <NavLink onClick={subMenuClosed} className="link" activeClassName="navActiveLink" exact to="/contact">Kontakt</NavLink>
@@ -77,7 +77,8 @@ function Navigation() {
                 </nav>
            
         </CSSTransition>
-        <div className="menuBacground" onClick={menuClosed}></div>
+        {isDisplayed && <div className="menuBacground" onClick={menuClosed}></div>}
+        
         </div>
            
             

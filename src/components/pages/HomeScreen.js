@@ -15,6 +15,8 @@ function HomeScreen() {
         >
            <div className="homeImgContainer" >
                 <img className="homeImg homeAnima" src="../img/bckg.jpg" alt="honey products" />
+                <img className="homeImgBig homeAnima" src="../img/honeyBig.jpg" alt="honey products" />
+
                
             </div>
             </CSSTransition>  

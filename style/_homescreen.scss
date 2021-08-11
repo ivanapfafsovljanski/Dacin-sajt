@@ -15,6 +15,9 @@
     z-index: -5;
     object-fit: cover;
 }
+.homeImgBig{
+    display: none;
+}
 
 .homeAnima-appear{transform:scale(0.8); opacity: 0.05;}
 .homeAnima-appear-active{transform:scale(1); opacity: 1; transition: opacity 1200ms, transform 500ms cubic-bezier(0.16, 1, 0.3, 1);}
@@ -29,4 +32,15 @@
 }
 .SocialMediaTable td{
     padding: 5px;
+}
+@media only screen and (min-width: 770px) {
+    .homeImg{
+        display: none;
+    }
+    .homeImgBig{
+        display: block;
+        width: 700px;
+        z-index: -5;
+        object-fit: contain;
+    }
 }

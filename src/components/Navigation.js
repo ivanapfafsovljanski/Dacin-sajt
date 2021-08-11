@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { CSSTransition } from 'react-transition-group';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
 
 
 function Navigation() {
@@ -9,14 +9,15 @@ function Navigation() {
 
     //displaying side manu on clicking hamburger
     function displayingMenu() {
-       
+
         setDisplayMenu((privValue) => {
+            // console.log("privValue je " + privValue + "!privVelue je " + !privValue)
             return !privValue;
         })
         subMenuClosed();
 
     }
-    
+    //Showing submenu
     const [isSubMenoShowen, setSubMenu] = useState(false);
 
     //toggle between opened and closed subMenu (by clicking on Proizvodi link)
@@ -25,6 +26,8 @@ function Navigation() {
             return !privValue;
         })
     }
+    
+
     // closes the subMenu when clicking on any other menu link
     function subMenuClosed() {
         setSubMenu(false)
@@ -34,15 +37,12 @@ function Navigation() {
         setDisplayMenu(false)
     }
 
-    // function closingMenuBody(){
-    //     console.log(isSubMenoShowen);
-    //     if(isSubMenoShowen){
-    //         setDisplayMenu(true);
-    //     }else{
-    //         setDisplayMenu(false);
-    //     }
-    // }
-   
+    function closingAllmenues() {
+        subMenuClosed();
+        menuClosed();
+    }
+    console.log("isSubMenoShowen: " + isSubMenoShowen);
+    console.log("isDisplayed: " + isDisplayed);
     return (
         <div>
             {/* Hamburger menu */}
@@ -51,38 +51,49 @@ function Navigation() {
                 <img className="hamburgerMenu" src="../img/hamburger.ico" onClick={displayingMenu} />
 
             </div>
-            
+
             <CSSTransition
                 in={isDisplayed}
-                timeout={{enter: 500, exit: 800}}
+                timeout={{ enter: 500, exit: 800 }}
                 classNames="manuSm"
-                
             >
-                 
-                <nav className="manuSm menuBig">
+
+                <nav className="manuSm">
 
                     <Link to="/"><img onClick={subMenuClosed} className="logoInMenu" src="../img/mali-mali-logo.png" /></Link>
                     <NavLink onClick={subMenuClosed} className="link" activeClassName="navActiveLink" exact to="/">Početna</NavLink>
 
                     <NavLink onClick={showSubMenu} className="link" activeClassName="navActiveLink" exact to="/products">Proizvodi</NavLink>
+                   <SwitchTransition>
+                    <CSSTransition
+                        key={isSubMenoShowen}
+                        timeout={800}
+                        classNames={"productsMenu"}
+                        
+                    >
+                        <>
+                        {isSubMenoShowen && <div className="productsMenu" >
+                            <NavLink onClick={closingAllmenues} className="subLink first" activeClassName="subActiveLink" exact to="/products/Honey">Med</NavLink>
+                            <NavLink onClick={closingAllmenues} className="subLink secund" activeClassName="subActiveLink" exact to="/products/HoneyProducts">Pčelinji proizvodi</NavLink>
+                            <NavLink onClick={closingAllmenues} className="subLink third" activeClassName="subActiveLink" exact to="/products/Drinks">Pića</NavLink>
 
-                    <div className="productsMenu" style={{ display: isSubMenoShowen ? "block" : "none" }}>
-                        <NavLink onClick={menuClosed} className="subLink first" activeClassName="subActiveLink" exact to="/products/Honey">Med</NavLink>
-                        <NavLink onClick={menuClosed} className="subLink secund" activeClassName="subActiveLink" exact to="/products/HoneyProducts">Pčelinji proizvodi</NavLink>
-                        <NavLink onClick={menuClosed} className="subLink third" activeClassName="subActiveLink" exact to="/products/Drinks">Pića</NavLink>
-                    </div>
+                            {/* <NavLink onClick={menuClosed} className="subLink third" activeClassName="subActiveLink" exact to="/products/Drinks">Pića</NavLink> */}
+                        </div>}
+                    </>
+                    </CSSTransition>
+                    </SwitchTransition>
                     <NavLink onClick={subMenuClosed} className="link" activeClassName="navActiveLink" exact to="/aboutUs">O Nama</NavLink>
                     <NavLink onClick={subMenuClosed} className="link" activeClassName="navActiveLink" exact to="/contact">Kontakt</NavLink>
 
                 </nav>
-           
-        </CSSTransition>
-        {isDisplayed && <div className="menuBacground" onClick={menuClosed}></div>}
-        
+
+            </CSSTransition>
+            {isDisplayed && <div className="menuBacground" onClick={menuClosed}></div>}
+
         </div>
-           
-            
-        
+//style={{ display: isSubMenoShowen ? "block" : "none" }}
+
+
     )
 
 

@@ -7,6 +7,7 @@ function Contact() {
         <div>
             <div className="homeImgContainer" >
                 <img className="homeImg opacity" src="../img/bckg.jpg" alt="honey products" />
+                <img className="homeImgBig homeAnima" src="../img/honeyBig.jpg" alt="honey products" />
             </div>
             <div className="contacUs">
                 <h2>Možete nas kontaktirati na ove načine:</h2>

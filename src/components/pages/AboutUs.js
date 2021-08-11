@@ -22,10 +22,9 @@ function AboutUs() {
                     classNames="usAnima"
                     
                 >
-                    {/* PROVERITI ZAŠTO NA PRVI KLIK NEMA ANIMACIJE!!! */}
                     <>
                         <div className="homeImgContainer usAnima" >
-                            {btnClicked && <img className="homeImg " src="../img/Daca2.jpg" alt="honey products" />}
+                            {btnClicked && <img className="homeImg homeImgBig homeImgAboutUs" src="../img/Daca2.jpg" alt="honey products" />}
                             {!btnClicked && <img src="../img/kosnice11.jpg" alt="hive" className="aboutUsAdditionalImg " />}
                         </div>
                        </>

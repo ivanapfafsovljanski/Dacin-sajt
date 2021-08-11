@@ -8,6 +8,16 @@
     
     // background-color: $menuBG;
     // height: calc(100vh - 110px);
+    // display: block;
+    // padding-top: 5px;
+    // // width: 100%;
+    // position: fixed;
+    // top: 110px;
+    // left: -200px;
+    // background-color: $menuBG;
+    // // height: calc(80vh - 110px);
+    // height: calc(60vh - 5px);
+    // // z-index: 1000;
    
 }
 
@@ -48,7 +58,6 @@ nav{
     background-color: $menuBG;
     // height: calc(80vh - 110px);
     height: calc(60vh - 5px);
-    z-index: 1000;
 }
 .link, .subLink{
     padding: 10px;
@@ -64,9 +73,9 @@ nav{
     background-color: $gradientOuter;
     color: $fontAktiv;
 }
-.first, .secund, .third{
-    display: none;
-}
+// .first, .secund, .third{
+//     display: none;
+// }
 .logoInMenu{
     display: none;
 }
@@ -92,14 +101,31 @@ nav{
     background-color: $fontLight;
     color: $hamburger;
 }
+//submenu animation
+.productsMenu-enter{transform: scaleX(0.3); opacity: 0.2;}
+.productsMenu-enter-active{transform: scaleX(1); opacity: 1; transition: opacity 800ms, transform 500ms cubic-bezier(0, 0.55, 0.45, 1);}
+.productsMenu-enter-done{transform: scaleX(1); opacity: 1;}
+
+.productsMenu-exit{ opacity: 1}
+.productsMenu-exit-active{opacity: 0; transition: opacity 800ms;}
+.productsMenu-exit-done{opacity: 0;}
+
 @media only screen and (min-width: 481px) {
-    .manuSm{
-        display: none;
+    
+    //menu links style changed
+    .link{
+        background-color: $hamburger;
+        color: $fontLight;
+    }
+    .navActiveLink{
+        background-color: $fontLight;
+        color: $gradientOuter;
     }
     .menuBacground{
         display: none;
     }
-    nav.menuBig{
+    .manuSm{
+        background-color: $hamburger;
         width: 100%;
         display: inline-block;
         height: 50px;
@@ -108,39 +134,85 @@ nav{
         left: 0px;
         padding: 0;
     }
-    .menuBig a.link, .subLink{
+    .manuSm a.link, .subLink{
         // height: 50px;
         display: inline-block;
-        width: 120px;
+        width: 110px;
         padding: 0;
-        border: none;
+        // border: none;
         line-height: 50px;
         float: left;
     }
+    //disabling menu animation on bigger screens
+    .manuSm-enter{transform: translateX(0px)}
+    .manuSm-enter-active{transform: translateX(0px)}; 
+    .manuSm-enter-done{transform: translateX(0px)}
+
+    .manuSm-exit{transform: translateX(0px)}
+    .manuSm-exit-active{ transform: translateX(0px)}
+    .manuSm-exit-done{transform: translateX(0px)}
+
     .subLink{
         display: block;
         position: absolute;
         top: 50px;
-        left: 120px;
+        left: 110px;
+        // width: 180px;
+        width: 100%;
+        background:linear-gradient(to bottom, $gradientOuter 1%, $hamburger 5%, $gradientOuter );
+        color: $fontLight;
+
     }
-    .subLink.first{
+    .subLink:hover:not(.subActiveLink){
+        background:linear-gradient(to bottom, $fontLight 5%, $btnGradientLight 100%);
+        color: $gradientOuter;
+    }
+    .subActiveLink{
+        background: none;
+        background-color: $fontLight;
+        color: $hamburger;
+    }
+    
+    .first{
         position: absolute;
         top: 50px;
-        left: 120px;
-        border-bottom: 1px solid $hamburger;
+        // left: 75px;
+        left: 0;
+        
+        
     }
     .secund{
         position: absolute;
         top: 100px;
-        left: 120px;
-        border-bottom: 1px solid $hamburger;
+        // left: 75px;
+        left: 0;
+        
     }
     .third{position: absolute;
-        top: 200px;
-        left: 120px;}
+        top: 150px;
+        // left: 75px;
+        left: 0;
+        border-bottom: none;
+    
+    }
+    
 }    
 @media only screen and (min-width: 770px) {
-    .menuBig a.link, .subLink{
+    //changing back the becgraund stiye for submenu links (subLinks)
+    // .subLink{
+    //     background:linear-gradient(to bottom, $btnGradientLight 5%, $gradientOuter 100%);
+    //     color: $fontLight;
+    // }
+    // .subLink:hover:not(.subActiveLink){
+    //     background:linear-gradient(to bottom, $fontLight 5%, $btnGradientLight 100%);
+    //     color: $gradientOuter;
+    // }
+    // .subActiveLink{
+    //     background: none;
+    //     background-color: $fontLight;
+    //     color: $hamburger;
+    // }
+    .manuSm a.link, .subLink{
         width: 180px;
     }
     .subLink{
@@ -153,15 +225,17 @@ nav{
         position: absolute;
         top: 50px;
         left: 180px;
-        border-bottom: 1px solid $hamburger;
+        
     }
     .secund{
         position: absolute;
         top: 100px;
         left: 180px;
-        border-bottom: 1px solid $hamburger;
+        
     }
     .third{position: absolute;
         top: 150px;
-        left: 180px;}
+        left: 180px;
+        border-radius: 0 0 10px 10px;
+    }
 }

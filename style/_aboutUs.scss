@@ -39,27 +39,35 @@
 .aboutUsTextContainer p{
     color: $fontLight;
 }
-.aboutUsDetails{
+//button for aboutUs screen and homeScreen
+.aboutUsDetails, .homeDetails{
     
     position: absolute;
-    left: calc(50% - 125px);
-    top: 75vh;
-    box-shadow:inset 0px 1px 1px 0px $hamburger;
-	background:linear-gradient(to bottom, $btnGradientLight 5%, $gradientOuter 100%);
-	border-radius:20px;
+    left: calc(50% + 100px);
+    top: 70vh;
+    box-shadow: 0px 0px 3px 1px $fontLight;
+	background:linear-gradient(to bottom, $btnGradientLight 5%, $hamburger 100%);
+	border-radius:100%;
 	//border:3px solid #4a916a;
 	display: block;
 	color: $fontLight;
 	font-size:16px;
-	padding:8px 16px;
+	// padding-left: 15px;
 	text-decoration:none;
-    width: 250px;
+    height: 69px;
+    width: 85px;
+    border:none;
+    z-index: 20;
 }
-.aboutUsDetails:hover {
+.aboutUsDetails:hover,
+ .homeDetails:hover{
 	background:linear-gradient(to bottom, $gradientOuter 5%, $fontLight 100%);
 	// background-color:#ffc905;
     color: $hamburger;
     font-weight: bold;
+    box-shadow: inset 0px 0px 3px 1px $hamburger;
+    width: 93px;
+    height: 76px;
 }
 .pressed{
     opacity: 50%;
@@ -84,8 +92,18 @@
 .usAnimaText-exit-done{}
 
 @media only screen and (min-width: 770px) {
+    .aboutUsDetails, .homeDetails{
+
+        left: calc(50% + 290px);
+    }
     .homeImgAboutUs{ 
         object-fit: cover;
+    }
+    .aboutUsAdditionalImg{
+        display: none;
+    }
+    .aboutUsTextContainer{
+        width: 700px;
     }
 }
 

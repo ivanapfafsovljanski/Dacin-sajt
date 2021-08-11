@@ -4,6 +4,13 @@ import { CSSTransition } from "react-transition-group";
 
 function HomeScreen() {
     const [homeScreenImgDisplayed, setHomeScreenImg] = useState(true);
+    const [homeBtnClicked, sethomeBtn] = useState(true);
+   
+    function handleHomeBtnClick(){
+        sethomeBtn(prevValue => {
+            return !prevValue;
+        })
+    }
     
    return(
         <div >
@@ -17,10 +24,15 @@ function HomeScreen() {
                 <img className="homeImg homeAnima" src="../img/bckg.jpg" alt="honey products" />
                 <img className="homeImgBig homeAnima" src="../img/honeyBig.jpg" alt="honey products" />
 
-               
+            {/* <button className="homeDetails" onClick={handleHomeBtnClick}>
+                {homeBtnClicked ? <span>Opširnije...</span> :<span>Zatvori</span>}
+            </button> */}
+
             </div>
             </CSSTransition>  
             <div className="socialMedia homeAnima">
+            
+
                 <table className="SocialMediaTable">
                     <tbody>
                         <tr>

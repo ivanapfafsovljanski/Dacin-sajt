@@ -15,6 +15,7 @@ function AboutUs() {
     return (
 
         <div>
+            
             <SwitchTransition>
                 <CSSTransition
                     key={btnClicked}
@@ -24,8 +25,10 @@ function AboutUs() {
                 >
                     <>
                         <div className="homeImgContainer usAnima" >
-                            {btnClicked && <img className="homeImg homeImgBig homeImgAboutUs" src="../img/Daca2.jpg" alt="honey products" />}
+                            {btnClicked && <img className="homeImg homeImgAboutUs" src="../img/Daca2.jpg" alt="honey products" />}
+                            {btnClicked && <img className="homeImgBig homeImgAboutUs" src="../img/Daca2.jpg" alt="honey products" />}
                             {!btnClicked && <img src="../img/kosnice11.jpg" alt="hive" className="aboutUsAdditionalImg " />}
+                            {!btnClicked && <img src="../img/kosnice11.jpg" alt="hive" className="homeImgBig" />}
                         </div>
                        </>
                        </CSSTransition>
@@ -47,7 +50,10 @@ function AboutUs() {
                     </>
                 </CSSTransition>
             </SwitchTransition>
-            <button className="aboutUsDetails" onClick={handleBtnClick}>Opširnije</button>
+            <button className="aboutUsDetails" onClick={handleBtnClick}>
+                {btnClicked ? <span>Opširnije...</span> :<span>Zatvori</span>}
+            </button>
+            
         </div>
     )
 }

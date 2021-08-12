@@ -42,7 +42,8 @@ function AboutUs() {
                         <>
                         {!btnClicked && <div className="aboutUsContainer">
                             <div className="aboutUsTextContainer usAnimaText">
-                                <img src="../img/pcela.ico" alt="logo" />
+                                {/* OVDE JE PROMENJENA IKONA */}
+                                <img src="../img/pcela.png" alt="logo" />
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At facilis, voluptatem aliquam sint in cum necessitatibus eum commodi inventore! Quas est vitae odio quidem temporibus natus recusandae, libero unde deserunt.Quod sint inventore, praesentium atque facilis obcaecati! Nihil repudiandae tempore eaque reprehenderit at quas natus quae temporibus quasi impedit. Nam, optio quia! Dicta reprehenderit, soluta tempora corporis velit dolorem, enim optio inventore temporibus vitae odit. Consectetur illo maiores, consequatur officia dolorum molestias explicabo nam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae incidunt corporis nisi cum fuga alias doloremque soluta officia, obcaecati non esse atque debitis sapiente itaque laborum nobis tempore consequatur iusto distinctio eaque suscipit? Explicabo officiis, est molestias reiciendis incidunt, corporis a consequatur pariatur aut beatae enim laborum sunt alias tempora!</p>
                             </div>
                         </div>}

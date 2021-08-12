@@ -34,22 +34,23 @@ function HomeScreen() {
             
 
                 <table className="SocialMediaTable">
+                    {/* OVDE SU PTOMENJENE 3 IKONE */}
                     <tbody>
                         <tr>
                             <td>
-                            <Link to="/contact"><img className="contactIco" src="../img/socilaMedia/twitterIcon.ico" alt="twitter logo" /></Link>
+                            <Link to="/contact"><img className="contactIco" src="../img/socilaMedia/twitterIcon.png" alt="twitter logo" /></Link>
                                 
                             </td>
                         </tr>
                         <tr>
                             <td>
-                            <Link to="/contact"><img className="contactIco" src="../img/socilaMedia/facebookIcon2.ico" alt="twitter logo" /></Link>
+                            <Link to="/contact"><img className="contactIco" src="../img/socilaMedia/facebookIcon2.png" alt="twitter logo" /></Link>
                                 
                             </td>
                         </tr>
                         <tr>
                             <td>
-                            <Link to="/contact"><img className="contactIco" src="../img/socilaMedia/emailIcon.ico" alt="twitter logo" /></Link>
+                            <Link to="/contact"><img className="contactIco" src="../img/socilaMedia/emailIcon.png" alt="twitter logo" /></Link>
                                 
                             </td>
                         </tr>

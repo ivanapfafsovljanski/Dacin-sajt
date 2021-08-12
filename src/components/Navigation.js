@@ -48,7 +48,8 @@ function Navigation() {
             {/* Hamburger menu */}
             <div className="hamburgerContainer">
                 <img className="smallScr" src="../img/mali-mali-logo.png" onClick={displayingMenu} />
-                <img className="hamburgerMenu" src="../img/hamburger.ico" onClick={displayingMenu} />
+                {/* OVDE JE ZAMENJENA IKONA */}
+                <img className="hamburgerMenu" src="../img/hamburger.png" onClick={displayingMenu} />
 
             </div>
 

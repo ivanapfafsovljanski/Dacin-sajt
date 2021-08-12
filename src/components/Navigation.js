@@ -50,8 +50,8 @@ function Navigation() {
                 <img className="smallScr" src="../img/mali-mali-logo.png" onClick={displayingMenu} />
                 {/* OVDE JE ZAMENJENA IKONA */}
                 {/* ZAMENJENA PUTANJA */}
-                <img className="hamburgerMenu" src="../img/hamburger.png" onClick={displayingMenu} />
-        
+                <img className="hamburgerMenu" src={require("./img/hamburger.png")} onClick={displayingMenu} />
+        {/* <img src={require('/images/image-name.png')} />  */}
 
             </div>
 

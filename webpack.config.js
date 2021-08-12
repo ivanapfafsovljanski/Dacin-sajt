@@ -1,4 +1,5 @@
 var HtmlWebPackPlugin = require("html-webpack-plugin");
+
 module.exports = {
     module: {
         rules: [
@@ -9,10 +10,7 @@ module.exports = {
                     loader: "babel-loader"
                 }
             },
-            {
-                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                 type: 'asset/resource',
-            },
+            
             {
                 test: /\.(css)$/,
                 use: [{
@@ -39,6 +37,16 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/index.html",
             filename: "./index.html"
-        })
+        }),
+        
     ]
 };
+// const path = require ('path');
+
+// module.exports = {
+//     entery : './src/index.js',
+//     output: {
+//         filename: 'main.js',
+//         path: path.resolve(__dirname, 'dist'),
+//     },
+// };
